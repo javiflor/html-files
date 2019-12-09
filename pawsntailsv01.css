@@ -1,0 +1,298 @@
+/* Font Styling and Sizing */
+body, html {
+  height: 100%;
+  font-size:14pt;
+  line-height: 1.8;
+  font-family: 'Archivo', sans-serif;
+  padding: 30px;
+}
+
+h1{font-family: "Archivo Black", sans-serif;
+   color:#80CCC1;
+ ;
+   font-size:24pt;}
+h2{font-family: "Archivo Black", sans-serif;
+    color:#2589BD;
+     ;
+    font-size:22pt;}
+h3{font-family: "Archivo Black", sans-serif;
+    color:#8D5A97;
+;
+    font-size:18pt;}
+h4{font-family: "Archivo Black", sans-serif;
+    color: #565656;
+;
+    font-size:16pt;}
+h5{font-family: "Archivo Black", sans-serif;
+  color:#80CCC1;
+;
+  font-size:12pt;}
+
+/* unvisited link */
+a:link {
+  color: #80CCC1;
+}
+
+/* visited link */
+a:visited {
+  color: #2589BD;
+}
+
+/* mouse over link */
+a:hover {
+  color: #565656;
+}
+
+/* selected link */
+a:active {
+  color: #80CCC1;
+  font-weight:bolder;
+}
+/* end font styling and sizing css*/
+
+/* Button CSS*/
+.button {
+  background-color: white; /*Purple Outline White Filling*/
+  border: 2px solid #D5B5FF;
+  color: #D5B5FF;
+  padding: 15px 32px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #D5B5FF; 
+  border: 2px solid white;
+  color: white;} /*White Outline Purple Filling*/
+.button3 {
+  border: 2px solid #C4D6B0;
+  color: #C4D6B0;} /* Green Outline White Filling */ 
+.button4 {
+  background-color: #C4D6B0; 
+  border: 2px solid white;
+  color: white;}} /* White Outline Green Filling */ 
+.button5 {
+  border: 2px solid #565656;
+  color: #565656;} /* Black Outline White Filling */
+.button6 {
+  background-color: #565656;
+  border: 2px solid white;
+  color:white;} /*White outline black filling*/
+.button7{
+  background-color:white;
+  border:2px solid #2589BD;
+  color: #2589BD;
+  font-weight:bold;
+}
+
+
+
+/* navigation menu css */
+
+.nav {
+    position: -webkit-sticky;
+    background-color:white;
+
+}
+
+.navbar > div {
+  float: left;
+}
+
+.navbar {
+  background-color: #d5b5ffff;
+  padding:10px;
+}
+
+.navbar a:link {
+  font-size:16px
+}
+
+.nondropdown {
+    float: left;
+    margin-top:5px;
+
+}
+
+.nondropdown a {
+  font-size: 16px;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nondropdown a:hover {
+  background-color:#d5b5ffff;
+  color: black;
+    margin: 0px 0px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.active {
+  font-weight:bolder;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+   color:black; opacity: 0.6;  transition: 0.3s;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+    opacity: 0.6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*end navigation menu css*/
+
+
+/*animations*/
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in .6s ease-out forwards;
+}
+
+.animate-fancy-pop-in{
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #80CCC1;  
+}
+
+.overlay a {
+text-align:center; }
+
+.petcontainer:hover .overlay {
+  opacity: .8;
+}
+
+.petcontainer {
+  position: relative;
+  width:50%;
+}
+
+.text {
+  color: black;
+  font-size: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left: 5px;
+  padding-right:5px;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 300px;
+
+ }
+ 
+ .adoptablepets{
+  margin: 0 auto;
+ }
+
+ /* Fade in Left Animation */
+ .fadeinleft {
+ opacity:0;
+ margin-left:-300px; 
+ max-width:100%;
+}
+
+/* Sticky */
+.sticky {
+  position: fixed;
+    width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  padding-left:50px;
+  padding-top:10px;
+}
+
+/*Centering an Image or Icon */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer Styling */
+.footer {
+  padding: 25px;
+
+}
+
+footer {
+  background-image: url("images/footer_background-01.png");
+;
+}

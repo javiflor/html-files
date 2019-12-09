@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<title>Adoptable Pets</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() { 
+      $("header.bgimg-1").fadeIn(5000);
+    });
+  </script>
+    <script type = "text/javascript">
+    $(document).ready(function() {
+      // grab the initial top offset of the navigation 
+        var stickyNavTop = $('.nav').offset().top;
+        
+        // our function that decides weather the navigation bar should have "fixed" css position or not.
+        var stickyNav = function(){
+          var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+               
+          // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+          // otherwise change it back to relative
+          if (scrollTop > stickyNavTop) { 
+              $('.nav').addClass('sticky');
+          } else {
+              $('.nav').removeClass('sticky'); 
+          }
+      };
+
+      stickyNav();
+      // and run it again every time you scroll
+      $(window).scroll(function() {
+        stickyNav();
+      });
+    });
+
+    </script>
+</head>
+<link rel="stylesheet" type="text/css" href="pawsntailsv01.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Black&display=swap" rel="stylesheet">
+<style>
+
+  /* Full height image header */
+  .bgimg-1 {
+    display: none;
+    background-position: center;
+    background-color: #d5b5ffff;
+    background-size: cover;
+    background-image: url('images/Banner_Adoptable Pets.png');
+    min-height: 75%;
+  }
+
+</style>
+<body>
+
+<div class = "nav">
+<div class="pnt-top">
+  <div class="pnt-bar pnt-white pnt-card" id="myNavbar">
+   <a href="index.html"><img src="icons/pawsntails.png " width="300" height="100" title="Paws n Pals Center" alt="Paws n Pals Center Logo"></a>   
+<!-- Right-sided navbar links -->
+<div class="navbar"  style = "position:fixed; margin-top:-90px; margin-right:0px; margin-left:650px;">
+  <div class="nondropdown">
+  <a href="index.html">Home</a>
+</div>
+  <div class="dropdown">
+    <button class="dropbtn">Adopt
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Adoptable_Pets.html" class="active">Adoptable Pets</a>
+      <a href="Success_Stories.html" >Success Stories</a>
+      <a href="Adoption_Form.html">Adoption Form</a>
+    </div>
+  </div> 
+    <div class="nondropdown">
+  <a href="Events.html">Events</a>
+</div>
+  <div class="dropdown">
+    <button class="dropbtn">Get Involved
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Volunteer.html">Volunteer</a>
+      <a href="Donate.html">Donate</a>
+      <a href="Foster.html">Foster</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Surrender.html">Surrender</a>
+      <a href="Vacinations.html">Vacinations</a>
+      <a href="Emergency.html">Emergency</a>
+    </div>
+  </div> 
+    <div class="nondropdown">
+  <a href="What_We_Do.html">What We Do</a>
+   <a href="Contact_Us.html">Contact Us </a>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<br> </br>
+<br> </br>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1">
+</header>
+
+<!-- Headings-->
+<h1 class="animate-fancy-pop-in"> Adoptable Pets</h1>
+
+<h2 class> So You're Interested in Adopting?</h2>
+
+<!-- Filtering Pets -->
+<table style="width: 100%; height: 30%; background-color: #80CCC1;">
+  <tbody>
+    <tr>
+      <td style="width: 60%; vertical-align:top; text-align:left; background-color: white; padding-left: 20px; ">
+        <h3 style> Find your pet today</h3>
+        <p style = "font-size:13pt; line-height:0px; height:20px;"> Click the icons to filter out available pets.</p>
+        <a href="Adoptable_Pets_Dogs.html"> <img src = icons/Icons_Dog.png width = "200" height ="200">
+        <a href="Adoptable_Pets_Cats.html"><img src = icons/Icons_Cat.png width ="200" height ="200">
+        <a href="Adoptable_Pets_Males.html"><img src = icons/Icons_Male.png width="200" height = "200">
+        <a href="Adoptable_Pets_Females.html"><img src = icons/Icons_Female.png width ="150" height = "200">
+        <td style="background-color: #80CCC1;">
+          <table style = "margin-left:auto; margin-right:auto;">
+            <tbody>
+              <tr>
+                <td style = "margin-left:auto; margin-right:auto;">
+                  <p style = "line-height:20px;">
+                   <a href="Adoptable_Pets_0-12.html"><button type = "submit" class ="button7"> 0-12 months </button> </p>
+                   <p style = "line-height:20px;">
+                    <a href="Adoptable_Pets_1-6.html"><button type = "submit" class ="button7"> 1-6 years </button></p>
+                    <p style = "line-height:20px;">
+                     <a href="Adoptable_Pets_6+.html"> <button type = "submit" class ="button7"> 6+ years </button></p>
+                     <p style = "line-height:20px;">
+                      <a href="Adoptable_Pets.html"> <button type = "submit" class ="button7"> Show All Available</button></p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br> </br>
+
+          <!-- Results -->
+
+          <h2 class="animate-fancy-pop-in">Results</h2>
+
+          <p style = "text-align:right;"> 
+     	  Last updated: <script> document.write(new Date().toLocaleDateString()); </script>
+          </p>
+          <td style = "width:100%; height:50%;">
+            <table class = "adoptablepets">
+              <tbody>
+<tr>
+<td style="width: 25%;">
+  <div class ="petcontainer">
+    <img src="images/greenhatcat.JPG" alt="cat"  class="image" >
+    <div class ="overlay">
+      <div class = "text">      
+        <h3>Name: Squish</h3>
+      Gender: Male</br>
+    Age: 2 years</br>
+  Breed: Tabby</br>
+  Hi, I like to be near people and also love eating food.
+</div>
+</div>
+</div>
+</td>
+<td style="width: 25%;">
+  <div class ="petcontainer">
+    <img src="images/blackdog.JPG" alt="dog"  class="image" >
+    <div class ="overlay">
+      <div class = "text"> 
+        <h3>Name: Leng Leng</h3>
+      Gender: Female</br>
+    Age: 2 years</br>
+  Breed: Chihuahua Mix</br>
+  I'm a black dog that is very needy in times but overall kind!
+</div>
+</div>
+</div>
+</td>
+  <td style="width: 25%">
+    <div class ="petcontainer">
+      <img src="images/bulldog.JPG"  alt="dog"  class="image" >
+      <div class ="overlay">
+        <div class = "text"> 
+          <h3>Name: Royce</h3>
+        Gender: Male</br>
+      Age: 5 years</br>
+    Breed: Bulldog</br>
+    I'm a sweet and shy boy - I am quiet and full of love! I am looking for a nice place to lay down with my person.
+  </div>
+</div>
+</div>
+</td>
+<td style="width: 25%;">
+  <div class ="petcontainer">
+    <img src="images/chihuahua.JPG" alt="dog"  class="image" >
+    <div class ="overlay">
+      <div class = "text">
+        <h3>Name: Beary</h3>
+      Gender: Male</br>
+    Age: 4 years</br>
+  Breed: Chihuahua Mix</br>
+  A gentle soul that wants a loving home. She is current on shots, spayed and has a clean bill of health. 
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+  <td style="width: 25%;">
+    <div class ="petcontainer">
+      <img src="images/goldenretriever.JPG" alt="dog"  class="image" >
+      <div class ="overlay">
+        <div class = "text">
+          <h3>Name: Koda</h3>
+        Gender: Male</br>
+      Age: 1 year</br>
+    Breed: Golden Retriever</br>
+    I am friendly with dogs and cats and loveadults! I would love to impress you
+  </div>
+</div>
+</div>
+</td>
+<td style="width: 25%;">
+  <div class ="petcontainer">
+    <img src="images/hungry.JPG" alt="dog"  class="image" >
+    <div class ="overlay">
+      <div class = "text">
+        <h3>Name: Harry</h3>
+      Gender: Male</br>
+    Age: 5 years</br>
+  Breed: Maltese</br>
+  I'm a dog that could accompany you on road trips and outdoor adventures.
+</div>
+</div>
+</div>
+</td>
+<td style="width: 25%;">
+  <div class ="petcontainer">
+    <img src="images/belle.JPG" alt="dog"  class="image" >
+    <div class ="overlay">
+      <div class = "text">
+        <h3>Name: Belle</h3>
+      Gender: Female</br>
+    Age: 3 years</br>
+  Breed: Miniature Schnauzer</br>
+  Hi, I love playing with toys and jumping onto cozy beds. I also love protecting my friends and family if there are any enemies around.
+</div>
+</div>
+</div>
+</td>
+<td style="width: 25%;">
+  <div class ="petcontainer">
+    <img src="images/skye.JPG" alt="dog"  class="image" >
+    <div class ="overlay">
+      <div class = "text">
+        <h3>Name: Skye</h3>
+      Gender: Female</br>
+    Age: 3 years</br>
+  Breed: Havanese/Norwich Mix </br>
+  Hi, I am a bit shy toward strangers and enjoy barking for fun.
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+  <td style="width: 25%;">
+    <div class ="petcontainer">
+      <img src="images/hani.JPG" alt="cat"  class="image" >
+      <div class ="overlay">
+        <div class = "text">
+          <h3>Name: Hani Hoang</h3>
+        Gender: Female</br>
+      Age: 6 years</br>
+    Breed: Domestic Cat</br>
+    I have tortoise-shell color fur with one cream-colored paw, yellow eyes, and a half brown/black nose.
+
+  </div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- So you're interested in Adopting-->
+<br></br>
+<h1 class="animate-fancy-pop-in"> Interested in meeting a pet?</h1>
+
+<table style="width: 100%; height: 10%; background-color:white;">
+  <tbody>
+    <tr>
+      <td style="width: 70%; height:20%; vertical-align:center; text-align:center; background-color: #C4D6B0; padding-left: 20px; ">
+        <h2 style> Call us to schedule a meeting time </h2>
+        <p style = "font-size:13pt; line-height:0px; height:20px;"> Find our office hours on our about me page or call us at 408-408-4080.</p>
+        <td style="width: 1000px;">
+          <div style="padding: 20px;">
+            <td style="width:30%; height:20%; vertical-align:top; text-align:center; background-color: white; padding-left:20px;">
+              <p style = "font-size:16px"><b>Fill in</b> our</br> required forms:</p>
+              <a href = "Adoption_Form.html"><img src = "icons/Icons_Forms.png" height = "150px" width = "150px" vertical-align:center;></img>
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br></br>
+
+<footer class="footer">
+<table style = "width:100%;">
+<tbody>
+<tr>
+<td style = "width:20%;">
+ <a href="index.html">    
+  <img src = "icons/pawsntails white.png" width="200" title="Paws n Pals Center" alt="Paws n Pals Center Logo" style ="padding-left:40px;" ></a>   
+</td>
+<td style = "width:30%; padding-left:40px; ">
+  <p style = "font-size:22px; font-weight:bolder; color:#2589BD; line-height:1.3;"> Contact Us </p>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3092217614094!2d-121.88326018469493!3d37.33518737984174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccb864de43d5%3A0x397ffe721937340e!2sSan%20Jos%C3%A9%20State%20University!5e0!3m2!1sen!2sus!4v1573972161007!5m2!1sen!2sus" width="100%" height="100%" style="border:0; " allowfullscreen=""></iframe>
+    <p style = "line-height:1.5;font-size:12pt;"> <b>Address: </b> 91 Washington Sq, San Jose, CA 95192</p>
+   <p style = "line-height:1; font-size:12pt;"> <b> Email: </b> help@pawsntails.org </p>
+   <p style = "line-height:1; font-size:12pt;">  <b>Phone Number:</b> 408-123-PAWS  </p>
+  <p style = "line-height:1; font-size:12pt;"> <b> Hours: </b> M,T,W,TH 10am-6pm</p>
+  <p style = "line-height:1; margin-left: 60px;  font-size:12pt;"> Weekends 10am-5pm </p>
+</td>
+<td style = "width:16.5%; padding-left:40px;">
+
+  <p style = "font-size:22px; font-weight:bolder; color:#2589BD; line-height:0.75;"> Navigation </p>
+
+<p>
+<p style = "color:white; line-height:0.75; font-size:14px;">Adopt</p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Adoptable_Pets.html">Adoptable Pets</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Success_Stories.html">Success Stories</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Adoption_Form.html">Adoption Form</a> </p>
+<a href="Events.html"  style = "color:white; text-decoration:none; font-size:14px;">Events</a>
+<p style = "color:white; line-height:0.75; font-size:14px;">Get Involved</p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Volunteer.html">Volunteer</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Donate.html">Donate</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Foster.html">Foster</a> </p>
+</td>
+<td style = "width:12%;">
+  <p style = "color:white; line-height:0.75; font-size:14px;">Services</p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Surrender.html">Surrender</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Vacinations.html">Vacinations</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Emergency.html">Emergency</a> 
+</p>
+<a href="What_We_Do.html"  style = "color:white; text-decoration:none; font-size:14px;">What We Do</a>
+<p style = "line-height:0.5;"><a href="Contact_Us.html"  style = "color:white; text-decoration:none; font-size:14px;">Contact Us </a> </p>
+<td style = "width:20%;">
+    <p style = "font-size:22px; font-weight:bolder; color:#2589BD; line-height:1;"> Commited to Making Things Right </p>
+    </div>
+    <p style = "color:white;line-height:1;font-size:14px;"> <b>The Paws N Tails Center</b> was established in 2015 to serve the South Bay area. The PNTC offers pet adoptions, medical care services, pet training, and first-time pet owner education. At PNTC, we care about finding the right fit for the right owner. </p>
+    <p style = "color:white; line-height:1; font-size:14px;">Our <b>mission</b> is rescue lost and abandoned animals in our local community, assist animals by providing food, shelter and vet care to those in need, promoting spay and neutering to end the population of unwanted pets, and provide adoption opportunities of animals to loving homes. </p>
+    <p style = "color:white; line-height:1;font-size:14px;"> Our <b>vision</b> to strive for a world where every animal has the medical help it needs to sustain longevity and a forever loving-home.</p>
+
+
+</td>
+
+
+</td>
+</tr>
+</tbody>
+</table>
+</footer>
+
+
+</body>
+</html>
