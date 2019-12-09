@@ -54,22 +54,34 @@
 </style>
 <body>
 
-<div class = "nav">
-<div class="pnt-top">
-  <div class="pnt-bar pnt-white pnt-card" id="myNavbar">
-   <a href="index.html"><img src="icons/pawsntails.png " width="300" height="100" title="Paws n Pals Center" alt="Paws n Pals Center Logo"></a>   
-<!-- Right-sided navbar links -->
-<div class="navbar"  style = "position:fixed; margin-top:-90px; margin-right:0px; margin-left:650px;">
-  <div class="nondropdown">
-  <a href="index.html">Home</a>
+
+ <!-- Navbar (sit on top) -->
+<div style = "box-sizing: border-box;">
+<div class="topnav" id="myTopnav">
+ <div class = "nav">
+
+<table style = "width:100%;">
+<tbody>
+<tr>
+<td style = "width:25%; text-align:left;">
+  
+    <div class="pnt-top">
+      <div class="pnt-bar pnt-white pnt-card" id="myNavbar">
+       <a href="index.html"><img src="images/PawsNTailsLogo.png " width="300" height="100" title="Paws n Pals Center" alt="Paws n Pals Center Logo" ></a>   
+</td>
+<td style = "width:75%; text-align:left;">
+       <!-- Right-sided navbar links -->
+       <div class="navbar"  style = "float:right; margin-right:5%;">
+        <div class="nondropdown">
+          <a href="index.html">Home</a>
 </div>
   <div class="dropdown">
     <button class="dropbtn">Adopt
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div class="dropdown-content" class="active">
       <a href="Adoptable_Pets.html" class="active">Adoptable Pets</a>
-      <a href="Success_Stories.html" >Success Stories</a>
+      <a href="Success_Stories.html">Success Stories</a>
       <a href="Adoption_Form.html">Adoption Form</a>
     </div>
   </div> 
@@ -100,12 +112,18 @@
   <a href="What_We_Do.html">What We Do</a>
    <a href="Contact_Us.html">Contact Us </a>
  </div>
+   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
 </div>
 </div>
 </div>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
-
+</div>
 <br> </br>
 <br> </br>
 
@@ -125,10 +143,10 @@
       <td style="width: 60%; vertical-align:top; text-align:left; background-color: white; padding-left: 20px; ">
         <h3 style> Find your pet today</h3>
         <p style = "font-size:13pt; line-height:0px; height:20px;"> Click the icons to filter out available pets.</p>
-        <a href="Adoptable_Pets_Dogs.html"> <img src = icons/Icons_Dog.png width = "200" height ="200">
-        <a href="Adoptable_Pets_Cats.html"><img src = icons/Icons_Cat.png width ="200" height ="200">
-        <a href="Adoptable_Pets_Males.html"><img src = icons/Icons_Male.png width="200" height = "200">
-        <a href="Adoptable_Pets_Females.html"><img src = icons/Icons_Female.png width ="150" height = "200">
+        <a href="Adoptable_Pets_Dogs.html"> <img src = icons/Icons_Dog.png  border = "0" class =" responsive">
+        <a href="Adoptable_Pets_Cats.html"><img src = icons/Icons_Cat.png  border = "0" class =" responsive">
+        <a href="Adoptable_Pets_Males.html"><img src = icons/Icons_Male.png border = "0" class =" responsive">
+        <a href="Adoptable_Pets_Females.html"><img src = icons/Icons_Female.png style = "width:15%;"border = "0" class =" responsive">
         <td style="background-color: #80CCC1;">
           <table style = "margin-left:auto; margin-right:auto;">
             <tbody>
