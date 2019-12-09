@@ -296,3 +296,8 @@ footer {
   background-image: url("images/footer_background-01.png");
 ;
 }
+
+/*Makes items responsive*/ 
+.responsive { 
+  height: auto; width: 20%; 
+}
