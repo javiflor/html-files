@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<title>Adoption</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() { 
+			$("header.bgimg-1").fadeIn(2000);
+		});
+	</script>
+	<script type = "text/javascript">
+		$(document).ready(function() {
+      // grab the initial top offset of the navigation 
+      var stickyNavTop = $('.nav').offset().top;
+
+        // our function that decides weather the navigation bar should have "fixed" css position or not.
+        var stickyNav = function(){
+          var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+
+          // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+          // otherwise change it back to relative
+          if (scrollTop > stickyNavTop) { 
+          	$('.nav').addClass('sticky');
+          } else {
+          	$('.nav').removeClass('sticky'); 
+          }
+      };
+
+      stickyNav();
+      // and run it again every time you scroll
+      $(window).scroll(function() {
+      	stickyNav();
+      });
+  });
+
+</script>
+<script>
+	var redirect = function(){
+		document.location.href="Thanks_For_Submitting_Page.html"
+	}
+</script>
+</head>
+<link rel="stylesheet" type="text/css" href="pawsntailsv01.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Black&display=swap" rel="stylesheet">
+<style>
+
+	/* Full height image header */
+	.bgimg-1 {
+		display: none;
+		background-position: center;
+		background-color: #d5b5ffff;
+		background-size: cover;
+		background-image: url("images/Banner_Adoptable Pets.png");
+		min-height: 80%;
+		max-width: 100%;
+	}
+
+	/* Center image */
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	<style>
+/* Styling for Form */
+input[type=text], select, textarea {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  text-align:left;
+}
+
+input[type=email], {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  text-align:left;
+}
+
+
+input[type=submit] {
+  border: 2px solid #d5b5ffff;
+  padding:15px;
+  width:25%;
+  background-color:#d5b5ffff;
+  color: white;
+  cursor: pointer;
+    display: block;
+    margin:auto;
+
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color:#d5b5ffff ;
+}
+
+input[type=text]:focus,select:focus, textarea:focus {
+  background-color: #C4D6B0;
+  border: 2px solid ##2589BD;
+}
+
+
+
+.container {
+  border-radius: 2px;
+  background-color: white;
+  margin:50px;
+  padding: 25px;
+  opacity: 0.75;
+}
+
+
+.watermarkstyling {
+  margin-left:70%;
+}
+
+</style>
+<body>
+
+  <!-- Navbar (sit on top) -->
+
+<div style = "box-sizing: border-box;">
+<div class="topnav" id="myTopnav">
+ <div class = "nav">
+
+<table style = "width:100%;">
+<tbody>
+<tr>
+<td style = "width:25%; text-align:left;">
+<div class="pnt-top">
+  <div class="pnt-bar pnt-white pnt-card" id="myNavbar">
+   <a href="#home"><img src="icons/PawsNTailsLogo.png" width="300" height="100" title="Paws n Pals Center" alt="Paws n Pals Center Logo"></a>   
+</td>
+<td style = "width:75%; text-align:left;">
+       <!-- Right-sided navbar links -->
+<div class="navbar"  style = "float:right; margin-right:5%;">
+  <div class="nondropdown">
+  <a href="index.html">Home</a>
+</div>
+  <div class="dropdown">
+    <button class="dropbtn"class="active">Adopt
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Adoptable_Pets.html">Adoptable Pets</a>
+      <a href="Success_Stories.html" >Success Stories</a>
+      <a href="Adoption_Form.html" class="active">Adoption Form</a>
+    </div>
+  </div> 
+    <div class="nondropdown">
+  <a href="Events.html" >Events</a>
+</div>
+  <div class="dropdown">
+    <button class="dropbtn">Get Involved
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Volunteer.html">Volunteer</a>
+      <a href="Donate.html">Donate</a>
+      <a href="Foster.html">Foster</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Surrender.html">Surrender</a>
+      <a href="Vacinations.html">Vacinations</a>
+      <a href="Emergency.html">Emergency</a>
+    </div>
+  </div> 
+    <div class="nondropdown">
+  <a href="What_We_Do.html">What We Do</a>
+   <a href="Contact_Us.html">Contact Us </a>
+</div>
+</div>
+</div>
+</td>
+
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+	<br> </br>
+	<br> </br>
+
+	<!-- Header with full-height image -->
+	<header class="bgimg-1">
+	</header>
+
+
+	<!-- Content -->
+	<h1 align="center">Adoption Form <img src="icons/Icons_Forms.png" align="middle" height="100" width="100"></h1>
+	<h2> FAQ </h2>
+	<table style="height: 182px;width:100%;">
+		<tbody>
+			<tr>
+				<td style="width: 50%;"><h3>What is an adoption form?</h3>Our ultimate goal is for the pets we have go to a well-loved and permanent home. The form is mostly practical in respect to adopting a pet, such as any prior experience with pets, landlord information, and other information about where the pet will be staying and with who.<br></br><br></br><br></br></td>
+				<td style="width: 50%;"><img src="images/photo-1548199973-03cce0bbc87b.jpg" alt="corgi and other dog" height="320" width="550" class="center"><br></br><br></br></td>
+			</tr>
+		</tbody>
+	</table>
+		<table style="height: 182px;width:100%;">
+		<tbody>
+			<tr>
+				<td style="width: 50%;"><h3>Where can I get the form?</h3>The form can be picked up onsite or on our webpage.<br></br><br></br></td>
+				<td style="width: 50%;"><img src="images/photo-1501602706752-d63d1276829b.jpg" alt="form" height="500" width="820" class="center"><br></br><br></br></td>
+			</tr>
+		</tbody>
+	</table>
+	<h3 align="center">Fill out our adoption form today!</h3><br></br>
+	<table style="width: 100%; height:50%;border-collapse: collapse; padding:20px;background-image: url(images/photo-1542297056134-df64a72eaeb7.jpg); background-repeat:no-repeat;background-size:2000px 3500px;">
+
+		<!-- Form -->
+
+		<tbody>
+			<tr>
+				<td style="text-align:center; padding:25px;">
+					<table>
+						<tbody>
+							<tr>
+								<div class="container">
+									<div style = "padding:25px;">
+										<form id = "details_div" class="main-div" method="POST" action="Thanks_For_Submitting_Page.html">
+											<img src="icons/PawsNTailsLogo.png" width="320" height="100" title="Paws n Pals Center" alt="Paws n Pals Center Logo" class = "watermarkstyling">
+											<br></br>
+											<h2 style ="line-height: 0.5"> Pet Adoption Agreement</h2>
+											<p> wwww.pawsntailsrescue.org </p>
+
+											<h3> Current Owner Information </h3>
+											<!-- Current Owner's Full name --> 
+											<label for="cname" style= "font-size:14px; font-weight:bolder; text-align: left;">Current Owner's Full Name:</label>
+											<input type="text" id="cfullname" name="cfullname" placeholder="Susan Kolhberg" required="true"/> 
+										</br>
+											
+											<!-- Address -->
+											<label for="caddress" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Address:</label>
+											<input type="text" id="caddress" name="caddress" placeholder="123 Rainbow Pl" required="true"/> 
+											</br>
+											
+											<!-- City -->
+											<label for="ccity" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">City:</label>
+											<input type="text" id="ccity" name="ccity" placeholder="San Jose"required="true"/>
+											
+											<!-- State  -->
+											<label for="cstate" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">State:</label> <input type="text" id="cstate" name="cstate" placeholder="CA"required="true"/> 
+											
+											<!-- Zip Code -->
+											<label for="czipcode" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Zipcode:</label> <input type="tel" id="czipcode" name="czipcode" placeholder="12345"required="true"/></br>
+											
+											<!-- Phone Number -->
+											<label for="ctel" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Phone Number:</label> <input type="text" id="ctel" name="ctel" placeholder="xxx-xxx-xxxx" required="true"/></br> 
+
+											<h3> Adopted Pet Information </h3>
+											<!-- Choose Animal Type and Enter Breed and Sex -->
+											
+											<label for="breed" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Breed:</label> <input type="text" id="breed" name="breed" placeholder="Maltese Mix">
+
+											<!-- sex-->
+												<label for="breed" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Sex:</label> <input type="text" id="sex" name="breed" placeholder="M or F"> 
+											
+											
+
+											 </br>
+
+											 <!-- Pet name -->
+											<label for="petname" style= "font-size:14px; font-weight:bolder; text-align: left;">Pet Name:</label>
+											<input type="text" id="petname" name="petname" placeholder="Rex"> 
+
+											<!-- PEt DOB -->
+											<label for="petDOB" style= "font-size:14px; font-weight:bolder; text-align: left;">DOB:</label>
+											<input type="text" id="petDOB" name="petDOB" placeholder="10/13/2018"> 
+
+										</br>
+										<!-- distinguishing marks -->
+										<label for="distgningmarks" style= "font-size:14px; font-weight:bolder;text-align: left;float: left;">Distinguishing Marks:</label>
+										<textarea id="distgningmarks" name="distgningmarks" placeholder="Write something.." style="height:75px; width:800px;"></textarea> 
+
+									</br>
+										<!-- signature-->
+										<p style = "font-size:11px; line-height:1.5;"> I, <input type="text" id="fullnamesig" name="fullnamesig" placeholder="Max Conwell"> , </br> hereafter referred to as the adopter, hereby agree that the above described animal is being adopted by me solely as a pet for myself and/or my immediate family. I agree that I will not sell, give away or otherwise dispose of said animal to any person(s), dealer, retailer, auction, institute or any other entity for any reason. If at a later date I am unable or unwilling to keep this pet, I agree to first contact the above described current owner and give them the option to reclaim said pet at no charge. I hereby agree to care for the above described pet in a humane and responsible manner and to provide it with clean and adequate shelter, food, water and veterinary care. I further agree that said pet shall reside inside my home and shall not be allowed to roam freely. I hereby agree that this pet shall wear a collar or harness with identification tags at all times.I hereby agree that the adoption fee of $150 helps to cover the current owner’s expense of raising and caring for the animal and is not refundable after a trial period of 14 days. I hereby understand and agree that the current owner makes no representations or warranties, expressed or implied, about the above mentioned animal's temperament and is hereby absolved from any liability for future damages or injuries caused by said animal. I also understand and agree that the current owner further gives no guarantees, expressed or implied, of the suitability of the animal to the adopter and/or his family. </p> 
+									</br>
+
+										<!-- pet name-->
+										<label for="adopteename" style= "font-size:14px; font-weight:bolder; text-align: left;">Adoptee Name:</label>
+										<input type="text" id="adopteename" name="adopteename" placeholder="Chris McCall" required="true"/> 
+									</br>
+										<!-- Address -->
+										<label for="adopteeaddress" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Address:</label>
+										<input type="text" id="adopteeaddress" name="adopteeaddress" placeholder="123 Rainbow Pl" required="true"/> </br>
+
+										<!-- City  -->
+										<label for="adopteecity" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">City:</label>
+										<input type="text" id="adopteecity" name="adopteecity" placeholder="San Jose" required="true"/> 
+
+										<!-- State  -->
+										<label for="adopteestate" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">State:</label> <input type="text" id="adopteestate" name="adopteestate" placeholder="CA" required="true"/> 
+
+										<!-- Zip Code  -->
+										<label for="adopteezipcode" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Zipcode:</label> <input type="text" id="adopteezipcode" name="adopteezipcode" placeholder="12345" required="true"/> 
+									</br>
+										<!-- Phone Number  -->
+										<label for="adopteetel" style= "font-size:14px; line-height:1; font-weight:bolder; text-align: left;">Phone Number:</label> <input type="tel" id="adopteetel" name="adopteetel" placeholder="xxx-xxx-xxxx" required="true"/> 
+									</br>  
+
+										<p style = "font-size:11px; line-height:1.5;"> I certify that all statements made by me on this adoption agreement are true and correct. I agree that the current owner has the right to confiscate the above described animal in the event that any statements made by me are found to be false and/or my check for the adoption fee is returned for insufficient funds. </p>
+
+										<!-- Adoptee Signature  -->
+										<label for="adopteesig" style= "font-size:14px; font-weight:bolder; text-align: left;">Adoptee Signature:</label>
+										<input type="text" id="adopteesig" name="adopteesig" placeholder="Enter Initials" maxlength="3" required="true"/>                 <label for="adptsigdate" style= "font-size:14px; font-weight:bolder; text-align: left;">Date:</label>
+										<input type="date" id="adptsigdate" name="adptsigdate" placeholder="12/1/2019" required="true"/> </br> 
+
+										<!-- Witness Signature -->
+
+										<label for="witnesssig" style= "font-size:14px; font-weight:bolder; text-align: left;">Witness Signature:</label>
+										<input type="text" id="witnesssig" name="witnesssig" placeholder="Enter Initials" maxlength="3" required="true"/> &emsp;                 <label for="witnesssigdate" style= "font-size:14px; font-weight:bolder; text-align: left;">Date:</label>
+										<input type="date" id="witnesssigdate" name="adptsigdate" placeholder="12/1/2019" required="true"/> 
+										</br>
+
+
+										<p style = "font-size:9px; line-height:1.5;"> 1 Current owner is defined here as the person who originally held the above described animal in their
+										possession. 2 Adopter is defined here as the person who accepts for adoption the above described animal. </p>
+
+										 <input type="submit" onclick="send()" value="submit">
+									</form>
+								</div>
+							</div>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<br></br>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+<script src = "https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDEk7FIiyiDP8E9WH8_sO-1n0Hy5wQiTrU",
+    authDomain: "fir-a379f.firebaseapp.com",
+    databaseURL: "https://fir-a379f.firebaseio.com",
+    projectId: "fir-a379f",
+    storageBucket: "fir-a379f.appspot.com",
+    messagingSenderId: "476464972273",
+    appId: "1:476464972273:web:2a200c977c320244b34450",
+    measurementId: "G-1YEZ73QK7T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="forms/adoption_index.js"></script>
+
+<footer class="footer">
+<table style = "width:100%;">
+<tbody>
+<tr>
+<td style = "width:20%;">
+ <a href="index.html">    
+  <img src = "icons/pawsntails white.png" width="200" title="Paws n Pals Center" alt="Paws n Pals Center Logo" style ="padding-left:40px;" ></a>   
+</td>
+<td style = "width:30%; padding-left:40px; ">
+  <p style = "font-size:22px; font-weight:bolder; color:#2589BD; line-height:1.3;"> Contact Us </p>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3092217614094!2d-121.88326018469493!3d37.33518737984174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccb864de43d5%3A0x397ffe721937340e!2sSan%20Jos%C3%A9%20State%20University!5e0!3m2!1sen!2sus!4v1573972161007!5m2!1sen!2sus" width="100%" height="100%" style="border:0; " allowfullscreen=""></iframe>
+    <p style = "line-height:1.5;font-size:12pt;"> <b>Address: </b> 91 Washington Sq, San Jose, CA 95192</p>
+   <p style = "line-height:1; font-size:12pt;"> <b> Email: </b> help@pawsntails.org </p>
+   <p style = "line-height:1; font-size:12pt;">  <b>Phone Number:</b> 408-123-PAWS  </p>
+  <p style = "line-height:1; font-size:12pt;"> <b> Hours: </b> M,T,W,TH 10am-6pm</p>
+  <p style = "line-height:1; margin-left: 60px;  font-size:12pt;"> Weekends 10am-5pm </p>
+</td>
+<td style = "width:16.5%; padding-left:40px;">
+
+  <p style = "font-size:22px; font-weight:bolder; color:#2589BD; line-height:0.75;"> Navigation </p>
+
+<p>
+<p style = "color:white; line-height:0.75; font-size:14px;">Adopt</p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Adoptable_Pets.html">Adoptable Pets</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Success_Stories.html">Success Stories</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Adoption_Form.html">Adoption Form</a> </p>
+<a href="Events.html"  style = "color:white; text-decoration:none; font-size:14px;">Events</a>
+<p style = "color:white; line-height:0.75; font-size:14px;">Get Involved</p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Volunteer.html">Volunteer</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Donate.html">Donate</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Foster.html">Foster</a> </p>
+</td>
+<td style = "width:12%;">
+  <p style = "color:white; line-height:0.75; font-size:14px;">Services</p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Surrender.html">Surrender</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Vacinations.html">Vacinations</a> </p>
+<p style ="text-indent:25px; line-height:1;"><a style = "color:black; text-decoration:none;font-size:14px;" href="Emergency.html">Emergency</a> 
+</p>
+<a href="What_We_Do.html"  style = "color:white; text-decoration:none; font-size:14px;">What We Do</a>
+<p style = "line-height:0.5;"><a href="Contact_Us.html"  style = "color:white; text-decoration:none; font-size:14px;">Contact Us </a> </p>
+<td style = "width:20%;">
+    <p style = "font-size:22px; font-weight:bolder; color:#2589BD; line-height:1;"> Commited to Making Things Right </p>
+    </div>
+    <p style = "color:white;line-height:1;font-size:14px;"> <b>The Paws N Tails Center</b> was established in 2015 to serve the South Bay area. The PNTC offers pet adoptions, medical care services, pet training, and first-time pet owner education. At PNTC, we care about finding the right fit for the right owner. </p>
+    <p style = "color:white; line-height:1; font-size:14px;">Our <b>mission</b> is rescue lost and abandoned animals in our local community, assist animals by providing food, shelter and vet care to those in need, promoting spay and neutering to end the population of unwanted pets, and provide adoption opportunities of animals to loving homes. </p>
+    <p style = "color:white; line-height:1;font-size:14px;"> Our <b>vision</b> to strive for a world where every animal has the medical help it needs to sustain longevity and a forever loving-home.</p>
+
+
+</td>
+
+
+</td>
+</tr>
+</tbody>
+</table>
+</footer>
+
+</body>
+</html>
